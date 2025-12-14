@@ -1,52 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sai | Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Sai | Embedded Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header class="hero">
-  <h1>Sai</h1>
+  <h1>Naga Venkata Sai Tadepalli</h1>
   <p>Embedded Software Engineer</p>
+  <div class="links">
+    <a href="mailto:tnvsai@gmail.com">Email</a>
+    <a href="https://github.com/tnvsai" target="_blank">GitHub</a>
+  </div>
 </header>
 
 <section>
-  <h2>About Me</h2>
+  <h2>Profile</h2>
   <p>
-    Embedded software engineer with experience in C, C++, STM32,
-    Linux device drivers, and Raspberry Pi.
+    Embedded software engineer specializing in safety-critical and low-level
+    automotive and embedded systems development. Strong experience in
+    AUTOSAR BSW, MCAL configuration, driver development, debugging, and
+    MISRA-compliant Embedded C programming across multiple MCU platforms.
   </p>
 </section>
 
 <section>
-  <h2>Skills</h2>
+  <h2>Technical Skills</h2>
   <ul class="skills">
-    <li>C</li>
-    <li>C++</li>
-    <li>Embedded Linux</li>
-    <li>STM32</li>
-    <li>Git</li>
+    <li>Embedded C</li>
+    <li>C++ (Basics)</li>
+    <li>AUTOSAR BSW</li>
+    <li>MCAL Configuration</li>
+    <li>CDD Development</li>
+    <li>MISRA / QAC</li>
+    <li>FreeRTOS / RTA-OS</li>
+    <li>Linux Environment</li>
+    <li>CAN / SPI / I²C / UART</li>
+    <li>Git / CI Tools</li>
   </ul>
 </section>
 
 <section>
-  <h2>Projects</h2>
+  <h2>What I Have Worked On</h2>
+
+  <div class="card">
+    <h3>AUTOSAR & Automotive Embedded Systems</h3>
+    <ul>
+      <li>Configured and customized AUTOSAR BSW modules such as StbM and EthTSyn.</li>
+      <li>Generated RTE and integrated BSW layers with application software.</li>
+      <li>Worked on OEM-specific MCAL configurations following automotive standards.</li>
+      <li>Performed MISRA compliance checks and static analysis.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>MCAL & CDD Development</h3>
+    <ul>
+      <li>Configured MCAL modules including PWM, ADC, DIO, SPI, and ICU.</li>
+      <li>Developed Custom Device Drivers (CDD) such as Watchdog monitoring.</li>
+      <li>Validated drivers using hardware debuggers and test tools.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Debugging, Testing & Validation</h3>
+    <ul>
+      <li>Performed unit, component, and functional testing on target hardware.</li>
+      <li>Used debuggers and trace tools for root-cause analysis.</li>
+      <li>Experience with static analysis, unit testing, and integration testing.</li>
+      <li>Worked on OTA and cybersecurity-related test scenarios.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Bare-Metal & Low-Level Development</h3>
+    <ul>
+      <li>Implemented bare-metal drivers for STM32 microcontrollers.</li>
+      <li>Developed drivers for GPIO, UART, SPI, I²C, Timers, PWM, ICU, EEPROM.</li>
+      <li>Explored bootloader concepts and peripheral initialization.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Personal Projects</h2>
+
+  <div class="card">
+    <h3>STM32F103RB Bare-Metal Driver Suite</h3>
+    <p>
+      Self-driven project focused on understanding low-level MCU programming,
+      peripheral drivers, and hardware interaction without an RTOS.
+    </p>
+    <a href="https://github.com/tnvsai/STM32F103RB_Baremetal" target="_blank">
+      View on GitHub
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>YatraMate – ESP32 Smart Bike Display</h3>
+    <p>
+      ESP32-based smart bike display system with BLE communication,
+      Android app integration, navigation display, and LVGL-based UI.
+    </p>
+    <a href="https://github.com/tnvsai/YatraMate" target="_blank">
+      View on GitHub
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
   <ul>
-    <li>Linux GPIO Device Driver</li>
-    <li>Telegram Bot using Firebase</li>
-    <li>Expense Tracker App</li>
+    <li><strong>B.Tech (ECE)</strong> – NRI Institute of Technology</li>
+    <li><strong>Intermediate (MPC)</strong> – Sri Gayatri Junior College</li>
+    <li><strong>SSC</strong> – St Ann’s High School</li>
   </ul>
 </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: yourmail@gmail.com</p>
-  <p>GitHub: github.com/tnvsai</p>
-</section>
+<footer>
+  <p>© Sai | Embedded Software Engineer</p>
+</footer>
 
 </body>
 </html>
