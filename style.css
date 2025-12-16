@@ -835,3 +835,104 @@ body.theme-red .c3 {
 .accent-red {
   color: #ff0000;
 }
+
+/* --- About Section Refined --- */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.about-card {
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.about-text {
+  text-align: left;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.icon-large {
+  font-size: 3rem;
+  color: var(--accent-blue);
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Highlighted Middle Card */
+.highlight-card {
+  border: 2px solid var(--accent-cyan);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+  transform: scale(1.02);
+  /* Slight pop */
+  background: rgba(30, 41, 59, 0.8);
+}
+
+.highlight-card .icon-large {
+  color: var(--accent-cyan);
+  /* Cyan icon for highlight card */
+}
+
+/* Checkmark List */
+.check-list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.check-icon {
+  color: var(--accent-cyan);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Pill Tags for Tools */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tech-tags span {
+  padding: 8px 16px;
+  background: rgba(6, 182, 212, 0.1);
+  color: var(--accent-cyan);
+  border-radius: 50px;
+  /* Pill shape */
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  transition: all 0.3s;
+}
+
+.tech-tags span:hover {
+  background: var(--accent-cyan);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
