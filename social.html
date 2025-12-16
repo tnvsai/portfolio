@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai.social | Life Beyond Code</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-red">
+
+    <!-- Dynamic Background -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <!-- Dual Logo Switcher -->
+            <div class="logo-group">
+                <a href="index.html" class="logo-link inactive">Sai<span class="accent-cyan">.dev</span></a>
+                <span class="logo-separator">/</span>
+                <a href="social.html" class="logo-link active">Sai<span class="accent-red">.social</span></a>
+            </div>
+
+            <ul class="nav-links">
+                <!-- Switcher moved to Logo Area -->
+                <li><a href="#youtube">YouTube</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+                <li><a href="#twitter">X (Twitter)</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" style="min-height: 80vh;">
+        <div class="container hero-content">
+            <div class="hero-text hidden">
+                <p class="greeting">Welcome to my</p>
+                <h1>Life <br><span class="text-gradient">Beyond Code</span></h1>
+                <h2 class="typing-effect"></h2>
+                <p class="bio-short">Join me as I step away from the IDE and explore the world. A personal collection of
+                    <strong>Travel Diaries</strong>, <strong>Lifestyle Vlogs</strong>, and <strong>Unscripted
+                        Moments</strong>.
+                </p>
+                <div class="cta-group">
+                    <a href="https://www.youtube.com/@tnvsai" target="_blank" class="btn btn-primary"><i
+                            class="fab fa-youtube"></i> Subscribe</a>
+                    <a href="https://www.instagram.com/tnvsai.exe/" target="_blank" class="btn btn-instagram"><i
+                            class="fab fa-instagram"></i> Follow</a>
+                    <a href="https://x.com/TNVSAI" target="_blank" class="btn btn-outline"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual hidden delay-1">
+                <!-- Social Visual (Play Button Orb) -->
+                <div class="tech-orb social-orb">
+                    <i class="fas fa-play chip-icon" style="padding-left: 10px;"></i>
+                    <div class="circle c1"></div>
+                    <div class="circle c2"></div>
+                    <div class="circle c3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- YouTube Section -->
+    <section id="youtube" class="section">
+        <div class="container">
+            <h2 class="section-title hidden">Latest <span class="accent">Vlogs</span></h2>
+            <div class="projects-grid">
+
+                <!-- Video 1 (Placeholder needed for Script) -->
+                <article class="project-card hidden">
+                    <div class="video-container">
+                        <!-- Replaced by Script with Thumbnail -->
+                        <iframe id="yt-frame-1" style="display:none;"></iframe>
+                        <div id="yt-placeholder-1"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 id="yt-title-1">Latest Upload</h3>
+                        <p id="yt-desc-1" class="project-desc">Loading video...</p>
+                        <a id="yt-link-1" href="https://www.youtube.com/@tnvsai" target="_blank"
+                            class="link-arrow">Watch on YouTube <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Video 2 -->
+                <article class="project-card hidden delay-1">
+                    <div class="video-container">
+                        <!-- Replaced by Script with Thumbnail -->
+                        <iframe id="yt-frame-2" style="display:none;"></iframe>
+                        <div id="yt-placeholder-2"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 id="yt-title-2">Previous Upload</h3>
+                        <p id="yt-desc-2" class="project-desc">Loading video...</p>
+                        <a id="yt-link-2" href="https://www.youtube.com/@tnvsai/videos" target="_blank"
+                            class="link-arrow">Browse
+                            Channel <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section id="instagram" class="section instagram-section">
+        <div class="container">
+            <h2 class="section-title hidden">Visual <span class="text-gradient">Diary</span></h2>
+
+            <div class="instagram-card hidden">
+                <i class="fab fa-instagram insta-icon-large"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 5px;">@tnvsai.exe</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 25px;">Capturing moments, one frame at a time.
+                    Follow my journey through photos and stories.</p>
+
+                <a href="https://www.instagram.com/tnvsai.exe/" target="_blank" class="btn btn-instagram"
+                    style="width: 100%; justify-content: center;">
+                    Visit Profile <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Twitter Section -->
+    <section id="twitter" class="section">
+        <div class="container">
+            <h2 class="section-title hidden">Latest <span class="accent">Thoughts</span></h2>
+
+            <!-- Fallback / CTA Button -->
+            <div class="hidden" style="text-align: center; margin-bottom: 20px;">
+                <a href="https://x.com/TNVSAI" target="_blank" class="btn btn-outline">
+                    <i class="fa-brands fa-x-twitter"></i> View on X
+                </a>
+            </div>
+
+            <div class="twitter-feed-container hidden" style="max-width: 600px; margin: 0 auto; min-height: 400px;">
+                <a class="twitter-timeline" data-theme="dark" data-height="600"
+                    data-chrome="nofooter noborders transparent" href="https://twitter.com/TNVSAI?ref_src=twsrc%5Etfw">
+                    Tweets by TNVSAI
+                </a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <h2>Join the <span class="text-gradient">Community</span>.</h2>
+            <div class="social-links">
+                <a href="mailto:tnvsai@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.youtube.com/@tnvsai" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/tnvsai.exe/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/TNVSAI" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                © <span id="year"></span> Sai Tadepalli.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
