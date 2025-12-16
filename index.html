@@ -1,129 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Sai | Embedded Software Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai | Automotive Embedded Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header class="hero">
-  <h1>Naga Venkata Sai Tadepalli</h1>
-  <p>Embedded Software Engineer</p>
-  <div class="links">
-    <a href="mailto:tnvsai@gmail.com">Email</a>
-    <a href="https://github.com/tnvsai" target="_blank">GitHub</a>
-  </div>
-</header>
+  <!-- Dynamic Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
 
-<section>
-  <h2>Profile</h2>
-  <p>
-    Embedded software engineer specializing in safety-critical and low-level
-    automotive and embedded systems development. Strong experience in
-    AUTOSAR BSW, MCAL configuration, driver development, debugging, and
-    MISRA-compliant Embedded C programming across multiple MCU platforms.
-  </p>
-</section>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Sai<span class="accent">.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#responsibilities">Responsibilities</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
 
-<section>
-  <h2>Technical Skills</h2>
-  <ul class="skills">
-    <li>Embedded C</li>
-    <li>C++ (Basics)</li>
-    <li>AUTOSAR BSW</li>
-    <li>MCAL Configuration</li>
-    <li>CDD Development</li>
-    <li>MISRA / QAC</li>
-    <li>FreeRTOS / RTA-OS</li>
-    <li>Linux Environment</li>
-    <li>CAN / SPI / I²C / UART</li>
-    <li>Git / CI Tools</li>
-  </ul>
-</section>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="hero-text hidden">
+        <p class="greeting">Hello, I am</p>
+        <h1>Naga Venkata <br><span class="text-gradient">Sai Tadepalli</span></h1>
+        <h2 class="typing-effect">Automotive Embedded Software Engineer</h2>
+        <p class="bio-short">Specialized in <strong>AUTOSAR BSW</strong>, <strong>MCAL Configuration</strong>, and
+          <strong>Safety-Critical Systems</strong> for leading Automotive OEMs.</p>
+        <div class="cta-group">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="https://github.com/tnvsai" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i>
+            GitHub</a>
+        </div>
+      </div>
+      <div class="hero-visual hidden delay-1">
+        <!-- Abstract Tech Visual Representation -->
+        <div class="tech-orb">
+          <i class="fas fa-microchip chip-icon"></i>
+          <div class="circle c1"></div>
+          <div class="circle c2"></div>
+          <div class="circle c3"></div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<section>
-  <h2>What I Have Worked On</h2>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title hidden">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
 
-  <div class="card">
-    <h3>AUTOSAR & Automotive Embedded Systems</h3>
-    <ul>
-      <li>Configured and customized AUTOSAR BSW modules such as StbM and EthTSyn.</li>
-      <li>Generated RTE and integrated BSW layers with application software.</li>
-      <li>Worked on OEM-specific MCAL configurations following automotive standards.</li>
-      <li>Performed MISRA compliance checks and static analysis.</li>
-    </ul>
-  </div>
+        <!-- Bio Card -->
+        <div class="about-card hidden">
+          <i class="fas fa-user-astronaut icon-large"></i>
+          <h3>Professional Summary</h3>
+          <p style="text-align: left; font-size: 0.95rem;">
+            Automotive Embedded Software Engineer with a solid background in AUTOSAR development, MCAL configuration,
+            and embedded systems testing.<br><br>
+            Expertise in BSW modules (StbM, EthTSyn), CDD development, and MISRA-compliant Embedded C programming.
+            Proficient in debugging (Trace32, UDE) and validation on NXP, Infineon, and Renesas platforms.
+          </p>
+        </div>
 
-  <div class="card">
-    <h3>MCAL & CDD Development</h3>
-    <ul>
-      <li>Configured MCAL modules including PWM, ADC, DIO, SPI, and ICU.</li>
-      <li>Developed Custom Device Drivers (CDD) such as Watchdog monitoring.</li>
-      <li>Validated drivers using hardware debuggers and test tools.</li>
-    </ul>
-  </div>
+        <!-- Competencies Card -->
+        <div class="about-card hidden delay-1">
+          <i class="fas fa-layer-group icon-large"></i>
+          <h3>Core Competencies</h3>
+          <ul
+            style="text-align: left; list-style: none; padding: 0; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+            <li style="margin-bottom: 8px;"><i class="fas fa-code accent"></i> <strong>Programming:</strong> Embedded C,
+              C++, MISRA, QAC, Static Analysis</li>
+            <li style="margin-bottom: 8px;"><i class="fas fa-server accent"></i> <strong>OS:</strong> Linux, FreeRTOS,
+              RTA-OS (Tasks, Queues, Semaphores, Timers)</li>
+            <li style="margin-bottom: 8px;"><i class="fas fa-cogs accent"></i> <strong>AUTOSAR:</strong> BSW (StbM,
+              EthTSyn), RTE Gen, OAW Scripting</li>
+            <li style="margin-bottom: 8px;"><i class="fas fa-microchip accent"></i> <strong>MCAL/CDD:</strong> PWM, ADC,
+              SPI, DIO, Watchdog CDD</li>
+            <li style="margin-bottom: 8px;"><i class="fas fa-memory accent"></i> <strong>Chips:</strong> S32K322,
+              S32K148, Aurix TC3xx, RH850, STM32</li>
+            <li style="margin-bottom: 8px;"><i class="fas fa-network-wired accent"></i> <strong>Protocols:</strong> CAN,
+              SPI, UART, I²C</li>
+          </ul>
+        </div>
 
-  <div class="card">
-    <h3>Debugging, Testing & Validation</h3>
-    <ul>
-      <li>Performed unit, component, and functional testing on target hardware.</li>
-      <li>Used debuggers and trace tools for root-cause analysis.</li>
-      <li>Experience with static analysis, unit testing, and integration testing.</li>
-      <li>Worked on OTA and cybersecurity-related test scenarios.</li>
-    </ul>
-  </div>
+        <!-- Tools Card -->
+        <div class="about-card hidden delay-2">
+          <i class="fas fa-tools icon-large"></i>
+          <h3>Tools & Debugging</h3>
+          <div class="tech-tags">
+            <span>Trace32</span>
+            <span>UDE</span>
+            <span>IAR</span>
+            <span>CANoe</span>
+            <span>ECU Test</span>
+            <span>Logic Analyzers</span>
+            <span>ParaSoft</span>
+            <span>Cantata</span>
+            <span>GTest</span>
+            <span>CodeSonar</span>
+            <span>DaVinci</span>
+            <span>ISOLAR-B</span>
+            <span>EB Tresos</span>
+            <span>Git</span>
+            <span>Jenkins</span>
+            <span>Bamboo</span>
+            <span>TeamCity</span>
+            <span>DOORS</span>
+            <span>RTC</span>
+            <span>BitBucket</span>
+          </div>
+        </div>
 
-  <div class="card">
-    <h3>Bare-Metal & Low-Level Development</h3>
-    <ul>
-      <li>Implemented bare-metal drivers for STM32 microcontrollers.</li>
-      <li>Developed drivers for GPIO, UART, SPI, I²C, Timers, PWM, ICU, EEPROM.</li>
-      <li>Explored bootloader concepts and peripheral initialization.</li>
-    </ul>
-  </div>
-</section>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Personal Projects</h2>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title hidden">Selected <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
 
-  <div class="card">
-    <h3>STM32F103RB Bare-Metal Driver Suite</h3>
-    <p>
-      Self-driven project focused on understanding low-level MCU programming,
-      peripheral drivers, and hardware interaction without an RTOS.
-    </p>
-    <a href="https://github.com/tnvsai/STM32F103RB_Baremetal" target="_blank">
-      View on GitHub
-    </a>
-  </div>
+        <!-- Project 1 -->
+        <article class="project-card hidden">
+          <div class="card-content">
+            <h3>STM32 Bare-Metal Suite</h3>
+            <p class="project-desc">
+              Developed low-level drivers from scratch for STM32F103RB (ARM Cortex-M3). Implemented drivers for GPIO,
+              UART, SPI, I²C, PWM, ICU, and EEPROM.
+              <br><br>Features a custom Bootloader to handle firmware updates and peripheral initialization without HAL.
+            </p>
+            <ul class="tech-stack">
+              <li><i class="fas fa-microchip"></i> STM32</li>
+              <li><i class="fas fa-c"></i> Embedded C</li>
+              <li><i class="fas fa-memory"></i> Register Level</li>
+            </ul>
+            <a href="https://github.com/tnvsai/STM32F103RB_Baremetal" target="_blank" class="link-arrow">View Code <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="card-glow"></div>
+        </article>
 
-  <div class="card">
-    <h3>YatraMate – ESP32 Smart Bike Display</h3>
-    <p>
-      ESP32-based smart bike display system with BLE communication,
-      Android app integration, navigation display, and LVGL-based UI.
-    </p>
-    <a href="https://github.com/tnvsai/YatraMate" target="_blank">
-      View on GitHub
-    </a>
-  </div>
-</section>
+        <!-- Project 2 -->
+        <article class="project-card hidden delay-1">
+          <div class="card-content">
+            <h3>YatraMate Smart Display</h3>
+            <p class="project-desc">
+              ESP32-based smart bike navigation assistant. Integrated localized BLE communication to transfer Google
+              Maps navigation and phone data from Android to an LVGL-based touch display.
+              <br><br>Optimized for real-time performance and on-road visibility.
+            </p>
+            <ul class="tech-stack">
+              <li><i class="fas fa-wifi"></i> ESP32</li>
+              <li><i class="fab fa-bluetooth"></i> BLE</li>
+              <li><i class="fas fa-map-marked"></i> LVGL / Android</li>
+            </ul>
+            <a href="https://github.com/tnvsai/YatraMate" target="_blank" class="link-arrow">View Project <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="card-glow"></div>
+        </article>
 
-<section>
-  <h2>Education</h2>
-  <ul>
-    <li><strong>B.Tech (ECE)</strong> – NRI Institute of Technology</li>
-    <li><strong>Intermediate (MPC)</strong> – Sri Gayatri Junior College</li>
-    <li><strong>SSC</strong> – St Ann’s High School</li>
-  </ul>
-</section>
+        <!-- Project 3: Cyber Bot -->
+        <article class="project-card hidden delay-2">
+          <div class="card-content">
+            <h3>Cyber Telegram Bot</h3>
+            <p class="project-desc">
+              A defensive security bot integrated with Firebase. Capable of real-time data collection including
+              location, IP, and camera snapshots for intruder detection.
+              <br><br>Features automated permission handling and secure data logging via Telegram interface.
+            </p>
+            <ul class="tech-stack">
+              <li><i class="fab fa-telegram"></i> Telegram API</li>
+              <li><i class="fas fa-database"></i> Firebase</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
+            </ul>
+            <a href="https://github.com/tnvsai/cyber_telegram_bot" target="_blank" class="link-arrow">View Code <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="card-glow"></div>
+        </article>
 
-<footer>
-  <p>© Sai | Embedded Software Engineer</p>
-</footer>
+      </div>
+    </div>
+  </section>
 
+  <!-- Key Responsibilities Section (Replaces Experience) -->
+  <section id="responsibilities" class="section">
+    <div class="container">
+      <h2 class="section-title hidden">Key <span class="accent">Responsibilities</span></h2>
+      <div class="roles-grid">
+
+        <!-- Category 1 -->
+        <div class="role-card hidden">
+          <h3><i class="fas fa-cogs accent"></i> AUTOSAR & Platform</h3>
+          <ul>
+            <li>Developed core MCU platform software for modern automotive systems.</li>
+            <li>Configured <strong>AUTOSAR BSW modules</strong> including <strong>StbM</strong> (Synchronized Time Base)
+              and <strong>EthTSyn</strong>.</li>
+            <li>Generated RTE and handled Inter-task communication (Queues, Semaphores) in RTA-OS/FreeRTOS.</li>
+            <li>Implemented OAW scripts for automated configuration and integration.</li>
+          </ul>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="role-card hidden delay-1">
+          <h3><i class="fas fa-microchip accent"></i> Drivers & MCAL</h3>
+          <ul>
+            <li>Configured <strong>MCAL modules</strong> (PWM, ADC, DIO, SPI) on NXP S32K, Aurix TC3xx, and RH850
+              platforms.</li>
+            <li>Designed <strong>Custom Device Drivers (CDD)</strong>, including robust Watchdog drivers for system
+              safety.</li>
+            <li>Implemented bare-metal low-level drivers for UART, I2C, and Timers as part of deep hardware exploration.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="role-card hidden delay-2">
+          <h3><i class="fas fa-shield-alt accent"></i> Quality & Validation</h3>
+          <ul>
+            <li>Enforced <strong>MISRA-C compliance</strong> and safety standards via CodeSonar and QAC analysis.</li>
+            <li>Conducted comprehensive testing: Unit (Cantata, GTest), Functional, and <strong>Cybersecurity/OTA
+                testing</strong>.</li>
+            <li>Advanced debugging using <strong>Trace32</strong>, UDE, and Logic Analyzers to ensure stability.</li>
+            <li>Documented requirements in DOORS and tracked defects in Jira/RTC.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="resume-download hidden delay-2">
+        <a href="#" class="btn btn-outline" download>Download Full CV <i class="fas fa-download"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact">
+    <div class="container footer-content">
+      <h2>Let's build reliable <span class="text-gradient">systems</span>.</h2>
+      <p>Open to discussing AUTOSAR, Driver Development, or new opportunities.</p>
+
+      <div class="contact-details" style="margin: 20px 0; color: var(--text-secondary);">
+        <p><i class="fas fa-phone accent"></i> +91 9494912419</p>
+        <p><i class="fas fa-envelope accent"></i> tnvsai@gmail.com</p>
+      </div>
+
+      <div class="social-links">
+        <a href="mailto:tnvsai@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/tnvsai" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/TNVSAI" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> Sai Tadepalli.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
